@@ -1,0 +1,65 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Add Award</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="example-form">
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Award Code" [(ngModel)]="AwardCode" name="AwardCode" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Award Title Ar" [(ngModel)]="AwardTitleAr" name="AwardTitleAr" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Award Title En" [(ngModel)]="AwardTitleEn" name="AwardTitleEn" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Award Desc Ar" [(ngModel)]="AwardDescAr" name="AwardDescAr" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Award Desc En" [(ngModel)]="AwardDescEn" name="AwardDescEn" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input  type="number" matInput placeholder="Award Short Name Ar" [(ngModel)]="AwardShortNameAr" name="AwardShortNameAr"
+                required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Award Short Name En" [(ngModel)]="AwardShortNameEn" name="AwardShortNameEn"
+                required>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="AddAward()" color="primary">Add Award</button>
+  </mat-card-actions>
+</mat-card>
